@@ -1,0 +1,51 @@
+creacion de puerto Bluetooth - manual
+
+sudo rfcomm bind 0 98:D3:61:FD:44:18
+
+comando minicom
+
+sudo apt install minicom
+sudo minicom -D /dev/rfcomm0 -b 9600
+
+comando prueba movimiento
+
+F-0,100
+V-150
+S
+
+V-120
+F-0,100
+S
+
+
+V-150
+F-0,100
+
+
+Avanzar
+
+V-120
+F-0,100
+
+Girar Derecha
+
+F-15,80
+
+Girar Izquierda
+
+F--20,60
+
+Detenerse por cercania
+
+F-0,20
+
+Detenerse Manualmente
+
+S
+
+Salir
+
+Ctrl A, x
+
+
+
